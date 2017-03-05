@@ -1,0 +1,5 @@
+name "harshad"
+description "A minimal D application."
+authors "acorbi"
+copyright "Copyright © 2017, acorbi"
+license "gpl3"
