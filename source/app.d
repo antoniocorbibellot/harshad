@@ -12,11 +12,17 @@ bool isHarshadNumber (uint n) {
   return false;
 }
 
-void main()
+void main(string[] args)
 {
-	writeln("Harshad numbers.");
-    foreach (n ; 1..101)  {
-      if (isHarshadNumber(n)) writef (" %d ", n);
-    }
-    writeln;
+  int max = 100;
+
+  writeln("Harshad numbers.");
+
+  if (args.length > 1)
+    max = args[1].to!int;
+  
+  foreach (n ; 1..(max+1))  {
+    if (isHarshadNumber(n)) writef (" %d ", n);
+  }
+  writeln;
 }
